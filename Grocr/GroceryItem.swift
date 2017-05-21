@@ -29,14 +29,16 @@ struct GroceryItem {
   let addedByUser: String
   let ref: FIRDatabaseReference?
   var completed: Bool
+  let date: String
   
   // initialize from user input
-  init(name: String, addedByUser: String, completed: Bool, key: String = "") {
+  init(name: String, addedByUser: String, completed: Bool, time: String ,key: String = "") {
     self.key = key
     self.name = name
     self.addedByUser = addedByUser
     self.completed = completed
     self.ref = nil
+    self.date = time
   }
   
   // initialize from firesnapshot
@@ -46,6 +48,7 @@ struct GroceryItem {
     name = snapshotValue["name"] as! String
     addedByUser = snapshotValue["addedByUser"] as! String
     completed = snapshotValue["completed"] as! Bool
+    date = snapshotValue["time-added"] as! String
     ref = snapshot.ref
   }
   
@@ -54,7 +57,8 @@ struct GroceryItem {
     return [
       "name": name,
       "addedByUser": addedByUser,
-      "completed": completed
+      "completed": completed,
+      "time-added": date
     ]
   }
   

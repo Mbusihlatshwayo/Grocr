@@ -133,7 +133,12 @@ class GroceryListTableViewController: UITableViewController {
         let text = textField.text else { return }
                                     
       // create a grocery item  from our current user
-      let groceryItem = GroceryItem(name: text, addedByUser: self.user.email, completed: false)
+//      let groceryItem = GroceryItem(name: text, addedByUser: self.user.email, completed: false)
+      let date = Date()
+      let formatter = DateFormatter()
+      formatter.dateFormat = "MM.dd.yyyy"
+      let result = formatter.string(from: date)
+      let groceryItem = GroceryItem(name: text, addedByUser: self.user.email, completed: false, time: result)
                                     
       // create a child ref whose key is the name of the item
       let groceryItemRef = self.ref.child(text.lowercased())
