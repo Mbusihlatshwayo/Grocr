@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>772337217821-krbn1q6lp5e7hpeo6de3butr5k6icpns.apps.googleusercontent.com</string>
+	<string>772337217821-nlbvf3d10jrib2cueinks6p2855sm143.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.772337217821-krbn1q6lp5e7hpeo6de3butr5k6icpns</string>
+	<string>com.googleusercontent.apps.772337217821-nlbvf3d10jrib2cueinks6p2855sm143</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDUOObj6z6zfrUg6l_tKYZH3aisIbsOIM4</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>rw.firebase.gettingstarted</string>
+	<string>mh.grocr.firebase</string>
 	<key>PROJECT_ID</key>
 	<string>grocr-afd61</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:772337217821:ios:11bd119eb6688866</string>
+	<string>1:772337217821:ios:934f284859ea261a</string>
 	<key>DATABASE_URL</key>
 	<string>https://grocr-afd61.firebaseio.com</string>
 </dict>
